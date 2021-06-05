@@ -19,5 +19,23 @@ https://www.cfd-online.com/Forums/openfoam-post-processing/191394-function-objec
 7. Agregar strainRate/strainRate.C debajo de vorticity/vorticity.C
  
 8. Con sudo nautilus ir al directorio /opt/openfoam7/src/functionObjects, abrir la terminal y compilar ./Allwmake
+##################################################################
+    You have to source bashrc in both user and sudo modes:
 
+    gedit ~/.bashrc
+    add following line below bashrc
+    source /opt/OpenFOAM41/OpenFOAM-4.1/etc/bashrc
+    sudo su
+    password
+    gedit ~/.bashrc
+    add following line below bashrc
+    source /opt/OpenFOAM41/OpenFOAM-4.1/etc/bashrc
+
+2. Now run ./Allwmake in sudo mode
+
+    cd $WM_PROJECT_DIR
+    sudo su
+    password
+    ./Allwmake
+##########################################################
 9. Listo
