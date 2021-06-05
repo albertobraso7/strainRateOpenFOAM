@@ -1,0 +1,23 @@
+######################################
+STRAINRATE
+######################################
+
+https://www.cfd-online.com/Forums/openfoam-post-processing/191394-function-object-strain-rate-tensor.html
+
+1. Utilizar "sudo nautilus" para navergar entre carpetas con permiso de superusuario, para copiar y modificar archivos.
+
+2. Ir al directorio /opt/openfoam7/etc/caseDicts/postProcessing/fields
+
+3. Copiar el archivo vorticity y modificarlos por strainRate. En mi caso solo copiar y pegar el archivo ahi.
+
+4. Ir al directorio /opt/openfoam7/src/functionObjects/field
+
+5. Copiar la carpeta de vorticity que contiene vorticity.C y vorticity.H y modificarlos por strainRate. En mi caso solo copiar y pegar los archivos modificados ahí en strainRate/.
+
+6.  Ir al directorio /opt/openfoam7/src/functionObjects/field/Make
+
+7. Agregar strainRate/strainRate.C debajo de vorticity/vorticity.C
+ 
+8. Con sudo nautilus ir al directorio /opt/openfoam7/src/functionObjects, abrir la terminal y compilar ./Allwmake
+
+9. Listo
